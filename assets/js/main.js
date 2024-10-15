@@ -1,11 +1,3 @@
-/**
-* Template Name: MyResume
-* Template URL: https://bootstrapmade.com/free-html-bootstrap-template-my-resume/
-* Updated: Mar 17 2024 with Bootstrap v5.3.3
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
-
 document.addEventListener("DOMContentLoaded", function() {
   function getQueryParam(param) {
     var queryString = window.location.search;
@@ -14,8 +6,9 @@ document.addEventListener("DOMContentLoaded", function() {
   }
 
   var projectID = getQueryParam('project');
+  console.log(projectID);  // This will log the project ID to the console
+  
   var projectDetails = {
-    // your project details here (like 'app1', 'web3', 'new1', etc.)
     'app1': {
       title: 'Cake calculator',
       description: 'This project was pretty simple for the most part...',
@@ -23,18 +16,27 @@ document.addEventListener("DOMContentLoaded", function() {
       category: 'App Development',
       client: 'XYZ Corp',
       date: 'August, 2023',
-      url: 'https://github.com/KawikaI/Real-Cake-Calculator'
+      url: 'https://github.com/KawikaI/web_applications'
     },
-    'new1': {
-      title: 'Blog!',
+    'web3': {
+      title: 'Discord Bot',
       description: 'Here is another website project...',
       images: ['assets/img/portfolio/blog1.jpg', 'assets/img/portfolio/blog1.jpg'],
       category: 'Card Design',
       client: 'ABC Corp',
       date: 'June, 2022',
-      url: 'https://github.com/KawikaI/KawikaI.github.io'
+      url: 'https://github.com/KawikaI/web_applications'
     },
-    // other projects...
+    'new1': {
+      title: 'Blog!',
+      description: 'This is a blog project...',
+      images: ['assets/img/portfolio/blog1.jpg', 'assets/img/portfolio/blog1.jpg'],
+      category: 'Blog Development',
+      client: 'ABC Corp',
+      date: 'January, 2023',
+      url: 'https://github.com/KawikaI/web_applications'
+    },
+    // add more projects with unique keys
   };
 
   if (projectDetails[projectID]) {
