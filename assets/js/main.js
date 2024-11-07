@@ -24,18 +24,32 @@ document.addEventListener("DOMContentLoaded", function() {
       images: ['assets/img/portfolio/blog1.jpg', 'assets/img/portfolio/blog1.jpg'],
       category: 'Card Design',
       client: 'ABC Corp',
-      date: 'June, 2022',
+      date: 'October 2024',
       url: 'https://github.com/KawikaI/web_applications'
     },
     'new1': {
-      title: 'Blog!',
-      description: 'This is a blog project...',
-      images: ['assets/img/portfolio/blog1.jpg', 'assets/img/portfolio/blog1.jpg'],
-      category: 'Blog Development',
-      client: 'ABC Corp',
-      date: 'January, 2023',
-      url: 'https://github.com/KawikaI/web_applications'
-    },
+  title: 'Blog!',
+  description: `This is a custom user model blog app that allows users to interact socially with blog posts once logged in. 
+                Check out the project on https://github.com/KawikaI/web_applications.`,
+  images: ['assets/img/portfolio/blog1.jpg', 'assets/img/portfolio/blog.jpg'],
+  category: 'Blog Development',
+  client: 'Class',
+  date: 'October 2024',
+  url: 'https://github.com/KawikaI/web_applications'
+},
+
+'card1': {  // New entry for the Tutor App project
+    title: 'Tutor App',
+    description: `This multi-user tutor app allows students and teaching assistants to manage tutoring sessions efficiently. 
+                  Check out the project on https://github.com/KawikaI/tutor_app.`,
+    images: ['assets/img/portfolio/tutor.jpg', 'assets/img/portfolio/tutor1.jpg'],  // Add additional images if available
+    category: 'App Development',
+    client: 'Class',
+    date: 'October 2024',
+    url: 'https://github.com/KawikaI/web_applications'
+  }
+
+
     // add more projects with unique keys
   };
 
